@@ -16,18 +16,12 @@ import android.widget.Toast;
 //https://developer.android.com/guide/topics/ui/menus.html?hl=es#FloatingContextMenu
 // https://developer.android.com/guide/topics/resources/menu-resource.html?hl=es
 //https://developer.android.com/guide/components/fragments.html?hl=es
+//http://androidappdevp.com/tag/registerforcontextmenu/
 /**
  * Created by Dark on 5/16/2017.
  */
 
 public class Fragment4 extends Fragment {
-    /*
-    @Override
-    public void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        TextView txt = (TextView)findViewById(R.id.text);
-
-    }*/
 
     public Fragment4() {
         // Required empty public constructor

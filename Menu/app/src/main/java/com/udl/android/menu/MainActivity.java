@@ -125,20 +125,19 @@ public class MainActivity extends AppCompatActivity {
                     .replace(R.id.content_frame, f4)
                     .commit();
 
-
             Bundle bundle = new Bundle();
             item.setChecked(true);
-            if(item.hasSubMenu()){
+            if(item.hasSubMenu()){//if has a
 
                 order  = item.getOrder();
                 title = item.getTitle().toString();
 
             }else if(title!=null) {
-                bundle.putString("NAME", getString(R.string.select_menu) + " " + item.getTitle().toString() +" "+(item.getOrder()-order)+" "+title+ " Orden "+ item.getOrder());
+                bundle.putString("NAME", getString(R.string.select_menu) + " " + item.getTitle().toString() +" "+(item.getOrder()-order)+" "+title+ " "+getString(R.string.orden)+" "+ item.getOrder());
                 title = null;
 
             }else{
-                bundle.putString("NAME", getString(R.string.select_menu) + " " + item.getTitle().toString() + " " + "Orden: " + item.getOrder());
+                bundle.putString("NAME", getString(R.string.select_menu) + " " + item.getTitle().toString() + " " + getString(R.string.orden)+" " + item.getOrder());
             }
 
             f4.setArguments(bundle);
